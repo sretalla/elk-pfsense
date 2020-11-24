@@ -1,7 +1,7 @@
 # elk-pfsense
 This repo is to store the setup for an ELK docker container based on sebp/elk:latest (version 7+)
 
-Run the container with ports and volumes like this:
+Run the container with ports and volumes like this:\
 docker run --name elk-pfsense \
 -p 5140:5140 \
 -p 5141:5141/udp \
@@ -12,6 +12,7 @@ docker run --name elk-pfsense \
 -v elastic-data:/var/lib/elasticsearch:rw \
 -v logstash-config:/etc/logstash:ro \
 -v kibana-config:/opt/kibana/config:ro \
+sebp/elk:latest
 
 Then once the container runs, go to the console under: http://docker-host:5601/app/dev_tools#/console
 Copy the text from geohash index in the root and hit the play button.
