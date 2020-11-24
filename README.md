@@ -2,7 +2,7 @@
 This repo is to store the setup for an ELK docker container based on sebp/elk:latest (version 7+)
 
 Run the container with ports and volumes like this:\
-docker run --name elk-pfsense \
+docker run -d  --name elk-pfsense \
 -p 5140:5140 \
 -p 5141:5141/udp \
 -p 9200:9200 \
