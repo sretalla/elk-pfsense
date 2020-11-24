@@ -14,7 +14,7 @@ docker run -d  --name elk-pfsense \
 -v kibana-config:/opt/kibana/config:ro \
 sebp/elk:latest
 
-Then once the container runs, go to the console under: http://docker-host:5601/app/dev_tools#/console
+Then once the container runs, go to the app: http://docker-host:5601/ and create an index called logstash-* and then go to the dev console under: http://docker-host:5601/app/dev_tools#/console
 Copy the text from geohash index in the root and hit the play button.
 
 Then you have the data from your pfsense 2.4 install ready to go by going to Status|System Logs|Settings, then Enable remote logging and list docker-host:5141 as one of the remote servers (make sure you also enable at least firewall in the list below that).
