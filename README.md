@@ -1,5 +1,5 @@
 # elk-pfsense
-This repo is to store the setup for an ELK docker containdr based on sebp/elk:latest (version 7+)
+This repo is to store the setup for an ELK docker container based on sebp/elk:latest (version 7+)
 
 Run the container with ports and volumes like this:
 docker run --name elk-pfsense \
