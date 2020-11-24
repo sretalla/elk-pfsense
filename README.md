@@ -22,3 +22,4 @@ Then you have the data from your pfsense 2.4 install ready to go by going to Sta
 max virtual memory areas vm.max_map_count [65530] likely too low, increase to at least [262144] means that the host's limits on mmap counts must be set to at least 262144\
 
 
+Import the file export.ndjson to get a dashboard set with a geo-map and some nice vizualizations.
