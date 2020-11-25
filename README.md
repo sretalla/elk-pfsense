@@ -8,10 +8,10 @@ docker run -d  --name elk-pfsense \
 -p 9200:9200 \
 -p 5044:5044 \
 -p 5601:5610 \
--v elastic-config:/etc/elasticsearch:ro \
--v elastic-data:/var/lib/elasticsearch:rw \
--v logstash-config:/etc/logstash:ro \
--v kibana-config:/opt/kibana/config:ro \
+-v /host-path/elastic-config:/etc/elasticsearch:ro \
+-v /host-path/elastic-data:/var/lib/elasticsearch:rw \
+-v /host-path/logstash-config:/etc/logstash:ro \
+-v /host-path/kibana-config:/opt/kibana/config:ro \
 sebp/elk:latest
 
 Then once the container runs, go to the app: http://docker-host:5601/ and create an index called logstash-* and then go to the dev console under: http://docker-host:5601/app/dev_tools#/console
