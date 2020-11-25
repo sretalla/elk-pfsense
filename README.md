@@ -20,6 +20,7 @@ Copy the text from geohash index in the root and hit the play button.
 Then you have the data from your pfsense 2.4 install ready to go by going to Status|System Logs|Settings, then Enable remote logging and list docker-host:5141 as one of the remote servers (make sure you also enable at least firewall in the list below that).
 
 max virtual memory areas vm.max_map_count [65530] likely too low, increase to at least [262144] means that the host's limits on mmap counts must be set to at least 262144\
-
+May vary for your platform, but this can be done with: \
+sudo sysctl -w vm.max_map_count=262144
 
 Import the file export.ndjson to get a dashboard set with a geo-map and some nice vizualizations.
