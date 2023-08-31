@@ -1,5 +1,5 @@
 # elk-pfsense
-This repo is to store the setup for an ELK docker container based on sebp/elk:latest (version 7+) to get logs from Pfsense 2.5 and generate a dashboard to vizualize your logs.
+This repo is to store the setup for an ELK docker container based on sebp/elk:latest (version 7+) to get logs from Pfsense 2.5 (and later versions, including pfSense+, tested up to 23.05.1) and generate a dashboard to vizualize your logs.
 
 On pfSense, stop your Syslog service. It's important that pfSense doesn't send any data to Logstash until you've made the changes below (clear your elastic-data if you messed up and start again).
 
