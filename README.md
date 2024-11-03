@@ -9,7 +9,7 @@ docker run -d  --name elk-pfsense \
 -p 5141:5141/udp \
 -p 9200:9200 \
 -p 5044:5044 \
--p 5601:5610 \
+-p 5601:5601 \
 -v /host-path/elastic-config:/etc/elasticsearch:ro \
 -v /host-path/elastic-data:/var/lib/elasticsearch:rw \
 -v /host-path/logstash-config:/etc/logstash:ro \
